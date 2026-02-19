@@ -1,14 +1,10 @@
-﻿# Codex Kit
+# Codex Kit
 
-> AI Agent templates with Skills, Agents, and Workflows
+AI agent templates with agents, skills, and workflows for Codex-style development.
 
-<div  align="center">
-    <a href="https://unikorn.vn/p/antigravity-kit?ref=unikorn" target="_blank"><img src="https://unikorn.vn/api/widgets/badge/antigravity-kit?theme=dark" alt="Codex Kit - Ná»•i báº­t trÃªn Unikorn.vn" style="width: 210px; height: 54px;" width="210" height="54" /></a>
-    <a href="https://unikorn.vn/p/antigravity-kit?ref=unikorn" target="_blank"><img src="https://unikorn.vn/api/widgets/badge/antigravity-kit/rank?theme=dark&type=daily" alt="Codex Kit - HÃ ng ngÃ y" style="width: 250px; height: 64px;" width="250" height="64" /></a>
-    <a href="https://launch.j2team.dev/products/antigravity-kit" target="_blank"><img src="https://launch.j2team.dev/badge/antigravity-kit/dark" alt="Codex Kit on J2TEAM Launch" width="250" height="54" /></a>
-</div>
+## Quick Start
 
-## Quick Install
+Install into a project:
 
 ```bash
 npx codex-kit init
@@ -21,108 +17,65 @@ npm install -g codex-kit
 codex-kit init
 ```
 
-This installs the `.agent` folder containing all templates into your project.
+`init` installs:
+- `.agent/` (agents, skills, workflows, scripts)
+- `AGENTS.md` (Codex workspace contract)
 
-## Usage
+## CLI Commands
 
-### Using Agents
+| Command | Description |
+| --- | --- |
+| `codex-kit init` | Install `.agent` and `AGENTS.md` |
+| `codex-kit update` | Refresh existing `.agent` and `AGENTS.md` |
+| `codex-kit status` | Check installation status |
 
-**No need to mention agents explicitly!** The system automatically detects and applies the right specialist(s):
-
-```
-You: "Add JWT authentication"
-AI: ðŸ¤– Applying @security-auditor + @backend-specialist...
-
-You: "Fix the dark mode button"
-AI: ðŸ¤– Using @frontend-specialist...
-
-You: "Login returns 500 error"
-AI: ðŸ¤– Using @debugger for systematic analysis...
-```
-
-**How it works:**
-
-- Analyzes your request silently
-- Detects domain(s) automatically (frontend, backend, security, etc.)
-- Selects the best specialist(s)
-- Informs you which expertise is being applied
-- You get specialist-level responses without needing to know the system architecture
-
-**Benefits:**
-
-- âœ… Zero learning curve - just describe what you need
-- âœ… Always get expert responses
-- âœ… Transparent - shows which agent is being used
-- âœ… Can still override by mentioning agent explicitly
-
-### Using Workflows
-
-Invoke workflows with slash commands:
-
-| Command          | Description                           |
-| ---------------- | ------------------------------------- |
-| `/brainstorm`    | Explore options before implementation |
-| `/create`        | Create new features or apps           |
-| `/debug`         | Systematic debugging                  |
-| `/deploy`        | Deploy application                    |
-| `/enhance`       | Improve existing code                 |
-| `/orchestrate`   | Multi-agent coordination              |
-| `/plan`          | Create task breakdown                 |
-| `/preview`       | Preview changes locally               |
-| `/status`        | Check project status                  |
-| `/test`          | Generate and run tests                |
-| `/ui-ux-pro-max` | Design with 50 styles                 |
-
-Example:
-
-```
-/brainstorm authentication system
-/create landing page with hero section
-/debug why login fails
-```
-
-### Using Skills
-
-Skills are loaded automatically based on task context. The AI reads skill descriptions and applies relevant knowledge.
-
-## CLI Tool
-
-| Command         | Description                               |
-| --------------- | ----------------------------------------- |
-| `codex-kit init`   | Install `.agent` folder into your project |
-| `codex-kit update` | Update to the latest version              |
-| `codex-kit status` | Check installation status                 |
-
-### Options
+Common options:
 
 ```bash
-codex-kit init --force        # Overwrite existing .agent folder
-codex-kit init --path ./myapp # Install in specific directory
-codex-kit init --branch dev   # Use specific branch
-codex-kit init --quiet        # Suppress output (for CI/CD)
-codex-kit init --dry-run      # Preview actions without executing
+codex-kit init --force
+codex-kit init --path ./my-project
+codex-kit init --branch main
+codex-kit init --dry-run
+codex-kit init --quiet
 ```
+
+## How To Use In Codex CLI
+
+1. Open your target project folder.
+2. Run `codex-kit init`.
+3. Start Codex in that same folder.
+4. Ask naturally, or use workflow-style prompts.
+
+Important:
+- `/plan`, `/debug`, `/create`, etc. are prompt patterns in Codex chat.
+- They are not terminal commands.
+
+Examples you can paste into Codex chat:
+
+```text
+Use the /plan workflow to break down JWT auth with refresh tokens.
+Use the /debug workflow to find why login returns HTTP 500.
+Use frontend-specialist to refactor this page for performance.
+$playwright open http://localhost:3000 and capture a screenshot.
+```
+
+## What You Get
+
+- `agents`: specialist perspectives (frontend, backend, security, testing, ops, etc.)
+- `skills`: reusable domain playbooks
+- `workflows`: structured execution patterns (`/plan`, `/debug`, `/test`, `/orchestrate`, etc.)
+- `scripts`: validation helpers under `.agent/scripts`
+
+## Notes
+
+If you use editor-integrated AI tooling (Cursor/Windsurf), avoid putting `.agent/` in project `.gitignore` if you want workflow discovery in the UI.
+If you want to keep it untracked locally, prefer `.git/info/exclude`.
 
 ## Documentation
 
-- **[Web App Example](https://github.com/Labontese/antigravity-kit-for-codex/docs/guide/examples/brainstorm)** - Step-by-step guide to creating a web application
-- **[Online Docs](https://github.com/Labontese/antigravity-kit-for-codex/docs)** - Browse all documentation online
-
-## Buy me coffee
-
-<p align="center">
-  <a href="https://github.com/Labontese/antigravity-kit-for-codex">
-    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" />
-  </a>
-</p>
-
-<p align="center"> - or - </p>
-
-<p align="center">
-  <img src="https://img.vietqr.io/image/mbbank-0779440918-compact.jpg" alt="Buy me coffee" width="200" />
-</p>
+- Repo: `https://github.com/Labontese/antigravity-kit-for-codex`
+- Web docs app: `web/`
 
 ## License
 
-MIT Â© Vudovn
-
+MIT
