@@ -39,8 +39,7 @@
         "name": "database-architect",
         "description": "Schema, SQL",
         "skills": [
-            "database-design",
-            "prisma-expert"
+            "database-design"
         ]
     },
     {
@@ -62,7 +61,7 @@
         "description": "CI/CD, Docker",
         "skills": [
             "deployment-procedures",
-            "docker-expert"
+            "server-management"
         ]
     },
     {

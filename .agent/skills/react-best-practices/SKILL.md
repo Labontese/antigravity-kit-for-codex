@@ -106,7 +106,7 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash
 | Database optimization   | `@[skills/database-design]`       |
 | Testing strategies      | `@[skills/testing-patterns]`      |
 | UI/UX design principles | `@[skills/frontend-design]`       |
-| TypeScript patterns     | `@[skills/typescript-expert]`     |
+| TypeScript patterns     | `@[skills/nodejs-best-practices]` |
 | Deployment & DevOps     | `@[skills/deployment-procedures]` |
 
 ---

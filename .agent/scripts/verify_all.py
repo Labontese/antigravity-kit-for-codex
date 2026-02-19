@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
-Full Verification Suite - Antigravity Kit
+Full Verification Suite - Codex Kit
 ==========================================
 
 Runs COMPLETE validation including all checks + performance + E2E.
@@ -10,16 +10,16 @@ Usage:
     python scripts/verify_all.py . --url <URL>
 
 Includes ALL checks:
-    ✅ Security Scan (OWASP, secrets, dependencies)
-    ✅ Lint & Type Coverage
-    ✅ Schema Validation
-    ✅ Test Suite (unit + integration)
-    ✅ UX Audit (psychology, accessibility)
-    ✅ SEO Check
-    ✅ Lighthouse (Core Web Vitals)
-    ✅ Playwright E2E
-    ✅ Bundle Analysis (if applicable)
-    ✅ Mobile Audit (if applicable)
+    âœ… Security Scan (OWASP, secrets, dependencies)
+    âœ… Lint & Type Coverage
+    âœ… Schema Validation
+    âœ… Test Suite (unit + integration)
+    âœ… UX Audit (psychology, accessibility)
+    âœ… SEO Check
+    âœ… Lighthouse (Core Web Vitals)
+    âœ… Playwright E2E
+    âœ… Bundle Analysis (if applicable)
+    âœ… Mobile Audit (if applicable)
 """
 
 import sys
@@ -46,16 +46,16 @@ def print_header(text: str):
     print(f"{Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}\n")
 
 def print_step(text: str):
-    print(f"{Colors.BOLD}{Colors.BLUE}🔄 {text}{Colors.ENDC}")
+    print(f"{Colors.BOLD}{Colors.BLUE}ðŸ”„ {text}{Colors.ENDC}")
 
 def print_success(text: str):
-    print(f"{Colors.GREEN}✅ {text}{Colors.ENDC}")
+    print(f"{Colors.GREEN}âœ… {text}{Colors.ENDC}")
 
 def print_warning(text: str):
-    print(f"{Colors.YELLOW}⚠️  {text}{Colors.ENDC}")
+    print(f"{Colors.YELLOW}âš ï¸  {text}{Colors.ENDC}")
 
 def print_error(text: str):
-    print(f"{Colors.RED}❌ {text}{Colors.ENDC}")
+    print(f"{Colors.RED}âŒ {text}{Colors.ENDC}")
 
 # Complete verification suite
 VERIFICATION_SUITE = [
@@ -203,7 +203,7 @@ def print_final_report(results: List[dict], start_time: datetime):
     """Print comprehensive final report"""
     total_duration = (datetime.now() - start_time).total_seconds()
     
-    print_header("📊 FULL VERIFICATION REPORT")
+    print_header("ðŸ“Š FULL VERIFICATION REPORT")
     
     # Statistics
     total = len(results)
@@ -213,9 +213,9 @@ def print_final_report(results: List[dict], start_time: datetime):
     
     print(f"Total Duration: {total_duration:.1f}s")
     print(f"Total Checks: {total}")
-    print(f"{Colors.GREEN}✅ Passed: {passed}{Colors.ENDC}")
-    print(f"{Colors.RED}❌ Failed: {failed}{Colors.ENDC}")
-    print(f"{Colors.YELLOW}⏭️  Skipped: {skipped}{Colors.ENDC}")
+    print(f"{Colors.GREEN}âœ… Passed: {passed}{Colors.ENDC}")
+    print(f"{Colors.RED}âŒ Failed: {failed}{Colors.ENDC}")
+    print(f"{Colors.YELLOW}â­ï¸  Skipped: {skipped}{Colors.ENDC}")
     print()
     
     # Category breakdown
@@ -229,11 +229,11 @@ def print_final_report(results: List[dict], start_time: datetime):
         
         # Print result
         if r.get("skipped"):
-            status = f"{Colors.YELLOW}⏭️ {Colors.ENDC}"
+            status = f"{Colors.YELLOW}â­ï¸ {Colors.ENDC}"
         elif r["passed"]:
-            status = f"{Colors.GREEN}✅{Colors.ENDC}"
+            status = f"{Colors.GREEN}âœ…{Colors.ENDC}"
         else:
-            status = f"{Colors.RED}❌{Colors.ENDC}"
+            status = f"{Colors.RED}âŒ{Colors.ENDC}"
         
         duration_str = f"({r.get('duration', 0):.1f}s)" if not r.get("skipped") else ""
         print(f"  {status} {r['name']} {duration_str}")
@@ -242,10 +242,10 @@ def print_final_report(results: List[dict], start_time: datetime):
     
     # Failed checks detail
     if failed > 0:
-        print(f"{Colors.BOLD}{Colors.RED}❌ FAILED CHECKS:{Colors.ENDC}")
+        print(f"{Colors.BOLD}{Colors.RED}âŒ FAILED CHECKS:{Colors.ENDC}")
         for r in results:
             if not r["passed"] and not r.get("skipped"):
-                print(f"\n{Colors.RED}✗ {r['name']}{Colors.ENDC}")
+                print(f"\n{Colors.RED}âœ— {r['name']}{Colors.ENDC}")
                 if r.get("error"):
                     error_preview = r["error"][:200]
                     print(f"  Error: {error_preview}")
@@ -254,15 +254,15 @@ def print_final_report(results: List[dict], start_time: datetime):
     # Final verdict
     if failed > 0:
         print_error(f"VERIFICATION FAILED - {failed} check(s) need attention")
-        print(f"\n{Colors.YELLOW}💡 Tip: Fix critical (security, lint) issues first{Colors.ENDC}")
+        print(f"\n{Colors.YELLOW}ðŸ’¡ Tip: Fix critical (security, lint) issues first{Colors.ENDC}")
         return False
     else:
-        print_success("✨ ALL CHECKS PASSED - Ready for deployment! ✨")
+        print_success("âœ¨ ALL CHECKS PASSED - Ready for deployment! âœ¨")
         return True
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Run complete Antigravity Kit verification suite",
+        description="Run complete Codex Kit verification suite",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
@@ -283,7 +283,7 @@ Examples:
         print_error(f"Project path does not exist: {project_path}")
         sys.exit(1)
     
-    print_header("🚀 ANTIGRAVITY KIT - FULL VERIFICATION SUITE")
+    print_header("ðŸš€ ANTIGRAVITY KIT - FULL VERIFICATION SUITE")
     print(f"Project: {project_path}")
     print(f"URL: {args.url}")
     print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -304,7 +304,7 @@ Examples:
         if args.no_e2e and category == "E2E Testing":
             continue
         
-        print_header(f"📋 {category.upper()}")
+        print_header(f"ðŸ“‹ {category.upper()}")
         
         for name, script_path, required in suite["checks"]:
             script = project_path / script_path
@@ -325,3 +325,4 @@ Examples:
 
 if __name__ == "__main__":
     main()
+

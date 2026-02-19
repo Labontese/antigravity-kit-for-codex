@@ -13,7 +13,7 @@ You are a project planning expert. You analyze user requests, break them into ta
 ## 🛑 PHASE 0: CONTEXT CHECK (QUICK)
 
 **Check for existing context before starting:**
-1.  **Read** `CODEBASE.md` → Check **OS** field (Windows/macOS/Linux)
+1.  **If present, read** `CODEBASE.md` → Check **OS** field (Windows/macOS/Linux)
 2.  **Read** any existing plan files in project root
 3.  **Check** if request is clear enough to proceed
 4.  **If unclear:** Ask 1-2 quick questions, then proceed

@@ -1,4 +1,4 @@
----
+﻿---
 name: parallel-agents
 description: Multi-agent orchestration patterns. Use when multiple independent tasks can run with different domain expertise or when comprehensive analysis requires multiple perspectives.
 allowed-tools: Read, Glob, Grep
@@ -6,21 +6,21 @@ allowed-tools: Read, Glob, Grep
 
 # Native Parallel Agents
 
-> Orchestration through Antigravity's built-in Agent Tool
+> Orchestration through Codex orchestration tools
 
 ## Overview
 
-This skill enables coordinating multiple specialized agents through Antigravity's native agent system. Unlike external scripts, this approach keeps all orchestration within Antigravity's control.
+This skill enables coordinating multiple specialized agents through Codex-native agent orchestration. Unlike external scripts, this approach keeps all orchestration within the Codex toolchain.
 
 ## When to Use Orchestration
 
-✅ **Good for:**
+âœ… **Good for:**
 - Complex tasks requiring multiple expertise domains
 - Code analysis from security, performance, and quality perspectives
 - Comprehensive reviews (architecture + security + testing)
 - Feature implementation needing backend + frontend + database work
 
-❌ **Not for:**
+âŒ **Not for:**
 - Simple, single-domain tasks
 - Quick fixes or small changes
 - Tasks where one agent suffices
@@ -58,7 +58,7 @@ Resume agent [agentId] and continue with additional requirements.
 
 ### Pattern 1: Comprehensive Analysis
 ```
-Agents: explorer-agent → [domain-agents] → synthesis
+Agents: explorer-agent â†’ [domain-agents] â†’ synthesis
 
 1. explorer-agent: Map codebase structure
 2. security-auditor: Security posture
@@ -70,7 +70,7 @@ Agents: explorer-agent → [domain-agents] → synthesis
 
 ### Pattern 2: Feature Review
 ```
-Agents: affected-domain-agents → test-engineer
+Agents: affected-domain-agents â†’ test-engineer
 
 1. Identify affected domains (backend? frontend? both?)
 2. Invoke relevant domain agents
@@ -80,7 +80,7 @@ Agents: affected-domain-agents → test-engineer
 
 ### Pattern 3: Security Audit
 ```
-Agents: security-auditor → penetration-tester → synthesis
+Agents: security-auditor â†’ penetration-tester â†’ synthesis
 
 1. security-auditor: Configuration and code review
 2. penetration-tester: Active vulnerability testing
@@ -102,7 +102,7 @@ Agents: security-auditor → penetration-tester → synthesis
 | `devops-engineer` | DevOps | "deploy", "CI/CD", "infrastructure" |
 | `database-architect` | Database | "schema", "Prisma", "migrations" |
 | `mobile-developer` | Mobile | "React Native", "Flutter", "mobile" |
-| `api-designer` | API Design | "REST", "GraphQL", "OpenAPI" |
+| `backend-specialist` | API Design | "REST", "GraphQL", "OpenAPI" |
 | `debugger` | Debugging | "bug", "error", "not working" |
 | `explorer-agent` | Discovery | "explore", "map", "structure" |
 | `documentation-writer` | Documentation | "write docs", "create README", "generate API docs" |
@@ -113,7 +113,7 @@ Agents: security-auditor → penetration-tester → synthesis
 
 ---
 
-## Antigravity Built-in Agents
+## Codex Built-in Strategies
 
 These work alongside custom agents:
 
@@ -159,7 +159,7 @@ After all agents complete, synthesize:
 ## Best Practices
 
 1. **Available agents** - 17 specialized agents can be orchestrated
-2. **Logical order** - Discovery → Analysis → Implementation → Testing
+2. **Logical order** - Discovery â†’ Analysis â†’ Implementation â†’ Testing
 3. **Share context** - Pass relevant findings to subsequent agents
 4. **Single synthesis** - One unified report, not separate outputs
 5. **Verify changes** - Always include test-engineer for code modifications
@@ -168,8 +168,10 @@ After all agents complete, synthesize:
 
 ## Key Benefits
 
-- ✅ **Single session** - All agents share context
-- ✅ **AI-controlled** - Claude orchestrates autonomously
-- ✅ **Native integration** - Works with built-in Explore, Plan agents
-- ✅ **Resume support** - Can continue previous agent work
-- ✅ **Context passing** - Findings flow between agents
+- âœ… **Single session** - All agents share context
+- âœ… **AI-controlled** - Claude orchestrates autonomously
+- âœ… **Native integration** - Works with built-in Explore, Plan agents
+- âœ… **Resume support** - Can continue previous agent work
+- âœ… **Context passing** - Findings flow between agents
+
+

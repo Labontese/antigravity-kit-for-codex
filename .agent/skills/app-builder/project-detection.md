@@ -1,4 +1,4 @@
-# Project Type Detection
+﻿# Project Type Detection
 
 > Analyze user requests to determine project type and template.
 
@@ -29,6 +29,7 @@
 1. Tokenize user request
 2. Extract keywords
 3. Determine project type
-4. Detect missing information → forward to conversation-manager
+4. Detect missing information â†’ ask clarifying questions via brainstorming workflow
 5. Suggest tech stack
 ```
+
