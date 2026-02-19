@@ -1,29 +1,29 @@
-# Antigravity Kit
+﻿# Codex Kit
 
 > AI Agent templates with Skills, Agents, and Workflows
 
 <div  align="center">
-    <a href="https://unikorn.vn/p/antigravity-kit?ref=unikorn" target="_blank"><img src="https://unikorn.vn/api/widgets/badge/antigravity-kit?theme=dark" alt="Antigravity Kit - Nổi bật trên Unikorn.vn" style="width: 210px; height: 54px;" width="210" height="54" /></a>
-    <a href="https://unikorn.vn/p/antigravity-kit?ref=unikorn" target="_blank"><img src="https://unikorn.vn/api/widgets/badge/antigravity-kit/rank?theme=dark&type=daily" alt="Antigravity Kit - Hàng ngày" style="width: 250px; height: 64px;" width="250" height="64" /></a>
-    <a href="https://launch.j2team.dev/products/antigravity-kit" target="_blank"><img src="https://launch.j2team.dev/badge/antigravity-kit/dark" alt="Antigravity Kit on J2TEAM Launch" width="250" height="54" /></a>
+    <a href="https://unikorn.vn/p/antigravity-kit?ref=unikorn" target="_blank"><img src="https://unikorn.vn/api/widgets/badge/antigravity-kit?theme=dark" alt="Codex Kit - Ná»•i báº­t trÃªn Unikorn.vn" style="width: 210px; height: 54px;" width="210" height="54" /></a>
+    <a href="https://unikorn.vn/p/antigravity-kit?ref=unikorn" target="_blank"><img src="https://unikorn.vn/api/widgets/badge/antigravity-kit/rank?theme=dark&type=daily" alt="Codex Kit - HÃ ng ngÃ y" style="width: 250px; height: 64px;" width="250" height="64" /></a>
+    <a href="https://launch.j2team.dev/products/antigravity-kit" target="_blank"><img src="https://launch.j2team.dev/badge/antigravity-kit/dark" alt="Codex Kit on J2TEAM Launch" width="250" height="54" /></a>
 </div>
 
 ## Quick Install
 
 ```bash
-npx @vudovn/ag-kit init
+npx codex-kit init
 ```
 
 Or install globally:
 
 ```bash
-npm install -g @vudovn/ag-kit
-ag-kit init
+npm install -g codex-kit
+codex-kit init
 ```
 
 This installs the `.agent` folder containing all templates into your project.
 
-### ⚠️ Important Note on `.gitignore`
+### âš ï¸ Important Note on `.gitignore`
 If you are using AI-powered editors like **Cursor** or **Windsurf**, adding the `.agent/` folder to your `.gitignore` may prevent the IDE from indexing the workflows. This results in slash commands (like `/plan`, `/debug`) not appearing in the chat suggestion dropdown.
 
 **Recommended Solution:**
@@ -48,13 +48,13 @@ To keep the `.agent/` folder local (not tracked by Git) while maintaining AI fun
 
 ```
 You: "Add JWT authentication"
-AI: 🤖 Applying @security-auditor + @backend-specialist...
+AI: ðŸ¤– Applying @security-auditor + @backend-specialist...
 
 You: "Fix the dark mode button"
-AI: 🤖 Using @frontend-specialist...
+AI: ðŸ¤– Using @frontend-specialist...
 
 You: "Login returns 500 error"
-AI: 🤖 Using @debugger for systematic analysis...
+AI: ðŸ¤– Using @debugger for systematic analysis...
 ```
 
 **How it works:**
@@ -68,10 +68,10 @@ AI: 🤖 Using @debugger for systematic analysis...
 
 **Benefits:**
 
-- ✅ Zero learning curve - just describe what you need
-- ✅ Always get expert responses
-- ✅ Transparent - shows which agent is being used
-- ✅ Can still override by mentioning agent explicitly
+- âœ… Zero learning curve - just describe what you need
+- âœ… Always get expert responses
+- âœ… Transparent - shows which agent is being used
+- âœ… Can still override by mentioning agent explicitly
 
 ### Using Workflows
 
@@ -107,29 +107,29 @@ Skills are loaded automatically based on task context. The AI reads skill descri
 
 | Command         | Description                               |
 | --------------- | ----------------------------------------- |
-| `ag-kit init`   | Install `.agent` folder into your project |
-| `ag-kit update` | Update to the latest version              |
-| `ag-kit status` | Check installation status                 |
+| `codex-kit init`   | Install `.agent` folder into your project |
+| `codex-kit update` | Update to the latest version              |
+| `codex-kit status` | Check installation status                 |
 
 ### Options
 
 ```bash
-ag-kit init --force        # Overwrite existing .agent folder
-ag-kit init --path ./myapp # Install in specific directory
-ag-kit init --branch dev   # Use specific branch
-ag-kit init --quiet        # Suppress output (for CI/CD)
-ag-kit init --dry-run      # Preview actions without executing
+codex-kit init --force        # Overwrite existing .agent folder
+codex-kit init --path ./myapp # Install in specific directory
+codex-kit init --branch dev   # Use specific branch
+codex-kit init --quiet        # Suppress output (for CI/CD)
+codex-kit init --dry-run      # Preview actions without executing
 ```
 
 ## Documentation
 
-- **[Web App Example](https://antigravity-kit-v2.vercel.app/docs/guide/examples/brainstorm)** - Step-by-step guide to creating a web application
-- **[Online Docs](https://antigravity-kit-v2.vercel.app/docs)** - Browse all documentation online
+- **[Web App Example](https://github.com/Labontese/antigravity-kit-for-codex/docs/guide/examples/brainstorm)** - Step-by-step guide to creating a web application
+- **[Online Docs](https://github.com/Labontese/antigravity-kit-for-codex/docs)** - Browse all documentation online
 
 ## Buy me coffee
 
 <p align="center">
-  <a href="https://buymeacoffee.com/vudovn">
+  <a href="https://github.com/Labontese/antigravity-kit-for-codex">
     <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" />
   </a>
 </p>
@@ -142,4 +142,5 @@ ag-kit init --dry-run      # Preview actions without executing
 
 ## License
 
-MIT © Vudovn
+MIT Â© Vudovn
+

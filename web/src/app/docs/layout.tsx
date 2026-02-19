@@ -4,8 +4,8 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 
 export const metadata: Metadata = {
-    title: "Documentation | Antigravity Kit",
-    description: "Complete documentation for Antigravity Kit - AI Agent templates with Skills, Agents, and Workflows.",
+    title: "Documentation | Codex Kit",
+    description: "Complete documentation for Codex Kit - AI agent templates with skills, agents, and workflows.",
 };
 
 export default function DocsLayout({

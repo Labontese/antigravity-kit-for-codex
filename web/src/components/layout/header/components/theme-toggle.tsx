@@ -1,31 +1,20 @@
 'use client';
 
 import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
 import { Button } from '../../../ui/button';
 
 export default function ThemeToggle() {
-    const [mounted, setMounted] = useState(false);
-    const { theme, setTheme } = useTheme();
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) {
-        return (
-            <div className="w-9 h-9 rounded-md border border-zinc-200 dark:border-zinc-800" />
-        );
-    }
+    const { resolvedTheme, setTheme } = useTheme();
+    const isDark = resolvedTheme === 'dark';
 
     return (
         <Button
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            onClick={() => setTheme(isDark ? 'light' : 'dark')}
             variant="ghost"
             size="icon"
             aria-label="Toggle theme"
         >
-            {theme === 'dark' ? (
+            {isDark ? (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={24}

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import MobileMenu from "@/components/layout/header/components/mobile-menu";
 import SearchDialog from "@/components/layout/header/components/search-dialog";
 import ThemeToggle from "@/components/layout/header/components/theme-toggle";
@@ -51,8 +51,8 @@ export default function Header() {
                         {/* Logo - Responsive */}
                         <span className="before:-inset-x-1 before:-rotate-1 relative z-4 before:pointer-events-none before:absolute before:inset-y-0 before:z-4 before:bg-linear-to-r before:from-blue-500 before:via-cyan-500 before:to-orange-500 before:opacity-16 before:mix-blend-hard-light font-semibold text-sm sm:text-base truncate">
                             <Link href="/" className="flex items-center gap-2 shrink-0 min-w-0">
-                                <span className="hidden sm:inline">Antigravity Kit</span>
-                                <span className="sm:hidden">AG Kit</span>
+                                <span className="hidden sm:inline">Codex Kit</span>
+                                <span className="sm:hidden">CK</span>
                             </Link>
                         </span>
 
@@ -62,7 +62,7 @@ export default function Header() {
                         {/* Desktop Nav */}
                         <nav className="hidden sm:flex items-center gap-1 flex-1 min-w-0">
                             <DonateDialog />
-                            <Link href="https://github.com/vudovn/antigravity-kit" target="_blank" rel="noopener noreferrer">
+                            <Link href="https://github.com/Labontese/antigravity-kit-for-codex" target="_blank" rel="noopener noreferrer">
                                 <Button variant="outline" className="hidden md:flex">
                                     <GithubIcon className="w-4 h-4 mr-2" />
                                     GitHub
@@ -100,3 +100,4 @@ export default function Header() {
         </header>
     )
 }
+

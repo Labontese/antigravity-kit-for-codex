@@ -1,9 +1,10 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import { CoffeeIcon, Heart, QrCodeIcon, User } from 'lucide-react';
+import { CoffeeIcon, Heart, QrCodeIcon } from 'lucide-react';
 
 interface DonateDialogProps {
     className?: string;
@@ -24,15 +25,15 @@ export default function DonateDialog({ className }: DonateDialogProps) {
                         <span>Fuel the Developer</span>
                     </DialogTitle>
                     <DialogDescription className="space-y-2 pt-2">
-                        Hi! I'm <strong>Vu</strong>. I'm dedicating my full-time work to building this kit. <br />
-                        Your support helps me keep shipping and maintaining it. If you find this tool helpful, please consider buying me a coffee.
+                        Support the maintainers of this project. <br />
+                        If this toolkit helps your work, consider supporting continued maintenance and improvements.
                     </DialogDescription>
                 </DialogHeader>
 
                 <div className="space-y-3 p-4">
                     {/* Buy Me a Coffee */}
                     <a
-                        href="https://buymeacoffee.com/vudovn"
+                        href="https://github.com/Labontese/antigravity-kit-for-codex"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all group"
@@ -41,8 +42,8 @@ export default function DonateDialog({ className }: DonateDialogProps) {
                             <CoffeeIcon className="w-5 h-5 text-amber-600 dark:text-amber-500" />
                         </div>
                         <div className="flex-1">
-                            <div className="font-semibold text-zinc-900 dark:text-zinc-50 mb-0.5">Buy Me a Coffee</div>
-                            <div className="text-sm text-zinc-600 dark:text-zinc-400">Support via buymeacoffee.com</div>
+                            <div className="font-semibold text-zinc-900 dark:text-zinc-50 mb-0.5">Support Project</div>
+                            <div className="text-sm text-zinc-600 dark:text-zinc-400">Open repository and sponsorship links</div>
                         </div>
                         <svg className="w-5 h-5 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -71,7 +72,13 @@ export default function DonateDialog({ className }: DonateDialogProps) {
                         <div className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50">
                             <div className="flex flex-col items-center gap-4">
                                 {/* QR Code Placeholder - Replace with actual QR code image */}
-                                <img className="w-48 h-48 rounded-lg" src="https://img.vietqr.io/image/mbbank-0779440918-compact.jpg" alt="" />
+                                <Image
+                                    className="w-48 h-48 rounded-lg"
+                                    src="https://img.vietqr.io/image/mbbank-0779440918-compact.jpg"
+                                    alt="Support QR code"
+                                    width={192}
+                                    height={192}
+                                />
                                 {/* Bank Details */}
                                 <div className="text-center space-y-1">
                                     <div className="text-sm font-medium text-zinc-900 dark:text-zinc-50">

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { Lightbulb } from "lucide-react";
 import agentsData from "@/services/agents.json";
 
@@ -33,7 +33,7 @@ export default function AgentsPage() {
                     Agents are specialist AI personas configured with domain-specific expertise, tools, and behavioral patterns. Each agent is designed to excel in a particular area of software development.
                 </p>
                 <p className="text-base text-zinc-600 dark:text-zinc-400 mb-6">
-                    When you make a request, Antigravity Kit's <strong>Intelligent Routing</strong> system automatically detects which agents are needed and activates them for you. You can also mention them by name to force a specific perspective.
+                    When you make a request, Codex Kit&apos;s <strong>Intelligent Routing</strong> system automatically detects which agents are needed and activates them for you. You can also mention them by name to force a specific perspective.
                 </p>
             </section>
 
@@ -49,13 +49,13 @@ export default function AgentsPage() {
                 <div className="relative group mb-6">
                     <pre className="p-4 rounded-lg bg-zinc-900 dark:bg-zinc-950 overflow-x-auto border border-zinc-800 font-mono text-sm">
                         <code className="text-zinc-100">{`You: "Add JWT authentication"
-AI: 🤖 Applying @security-auditor + @backend-specialist...
+AI: ðŸ¤– Applying @security-auditor + @backend-specialist...
 
 You: "Fix the dark mode button"
-AI: 🤖 Using @frontend-specialist...
+AI: ðŸ¤– Using @frontend-specialist...
 
 You: "Login returns 500 error"
-AI: 🤖 Using @debugger for systematic analysis...`}</code>
+AI: ðŸ¤– Using @debugger for systematic analysis...`}</code>
                     </pre>
                 </div>
 
@@ -83,7 +83,7 @@ AI: 🤖 Using @debugger for systematic analysis...`}</code>
                     Available Agents
                 </h2>
                 <p className="text-base text-zinc-600 dark:text-zinc-400 mb-6">
-                    Antigravity Kit includes {agents.length} specialist agents:
+                    Codex Kit includes {agents.length} specialist agents:
                 </p>
 
                 <div className="space-y-4">
@@ -144,7 +144,7 @@ You are a senior frontend architect...`}</code>
                         href="/docs/skills"
                         className="group p-6 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all"
                     >
-                        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Skills →</h3>
+                        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Skills â†’</h3>
                         <p className="text-sm text-zinc-600 dark:text-zinc-400">
                             Learn about domain-specific knowledge modules
                         </p>
@@ -153,7 +153,7 @@ You are a senior frontend architect...`}</code>
                         href="/docs/workflows"
                         className="group p-6 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all"
                     >
-                        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Workflows →</h3>
+                        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Workflows â†’</h3>
                         <p className="text-sm text-zinc-600 dark:text-zinc-400">
                             Explore slash command procedures
                         </p>
@@ -185,3 +185,4 @@ You are a senior frontend architect...`}</code>
         </div>
     );
 }
+

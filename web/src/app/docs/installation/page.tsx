@@ -1,9 +1,9 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { Callout } from "@/components/mdx";
 
 export const metadata = {
-  title: "Installation | Antigravity Kit",
-  description: "Get started with Antigravity Kit in under a minute.",
+  title: "Installation | Codex Kit",
+  description: "Get started with Codex Kit in under a minute.",
 };
 
 export default function InstallationPage() {
@@ -20,7 +20,7 @@ export default function InstallationPage() {
           Installation
         </h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400">
-          Get started with Antigravity Kit in under a minute.
+          Get started with Codex Kit in under a minute.
         </p>
       </div>
 
@@ -29,11 +29,11 @@ export default function InstallationPage() {
           Quick Start
         </h2>
         <p className="text-base text-zinc-600 dark:text-zinc-400 mb-6">
-          The fastest way to install Antigravity Kit is using <code className="px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-sm font-mono">npx</code> in root project:
+          The fastest way to install Codex Kit is using <code className="px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-sm font-mono">npx</code> in root project:
         </p>
 
         <pre className="p-4 rounded-lg bg-zinc-950 overflow-x-auto mb-4 text-sm font-mono text-zinc-100">
-          npx @vudovn/ag-kit init
+          npx codex-kit init
         </pre>
 
         <Callout type="info">
@@ -46,15 +46,15 @@ export default function InstallationPage() {
           Global Installation
         </h2>
         <p className="text-base text-zinc-600 dark:text-zinc-400 mb-6">
-          Install the CLI globally to use <code className="px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-sm font-mono">ag-kit</code> command anywhere:
+          Install the CLI globally to use <code className="px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-sm font-mono">codex-kit</code> command anywhere:
         </p>
 
         <pre className="p-4 rounded-lg bg-zinc-950 overflow-x-auto mb-2 text-sm font-mono text-zinc-100">
-          npm install -g @vudovn/ag-kit
+          npm install -g codex-kit
         </pre>
 
         <pre className="p-4 rounded-lg bg-zinc-950 overflow-x-auto mb-4 text-sm font-mono text-zinc-100">
-          cd your-project && ag-kit init
+          cd your-project && codex-kit init
         </pre>
 
         <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
@@ -67,29 +67,29 @@ export default function InstallationPage() {
           What Gets Installed
         </h2>
         <p className="text-base text-zinc-600 dark:text-zinc-400 mb-6">
-          After running the installation command, you'll have the following structure:
+          After running the installation command, you&apos;ll have the following structure:
         </p>
 
         <pre className="p-4 rounded-lg bg-zinc-950 overflow-x-auto mb-4 text-sm font-mono text-zinc-100">
 {`.agent/
-├── agents/          # 16 Specialist Agents
-├── skills/          # 40+ Skills
-├── workflows/       # 11 Slash Commands
-├── rules/           # Workspace Rules
-└── ARCHITECTURE.md  # Full documentation`}
+â”œâ”€â”€ agents/          # 20 Specialist Agents
+â”œâ”€â”€ skills/          # 37 Skills
+â”œâ”€â”€ workflows/       # 11 Slash Commands
+â”œâ”€â”€ rules/           # Workspace Rules
+â””â”€â”€ ARCHITECTURE.md  # Full documentation`}
         </pre>
 
         <div className="space-y-4">
           <div className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800">
             <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">agents/</h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400">
-              Contains 16 specialist AI agent configurations for different domains (frontend, backend, security, etc.)
+              Contains 20 specialist AI agent configurations for different domains (frontend, backend, security, etc.)
             </p>
           </div>
           <div className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800">
             <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">skills/</h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400">
-              40+ domain-specific knowledge modules that agents can use
+              37 domain-specific knowledge modules that agents can use
             </p>
           </div>
           <div className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800">
@@ -101,7 +101,7 @@ export default function InstallationPage() {
           <div className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800">
             <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">rules/</h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400">
-              Workspace configuration including <code className="px-1 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 font-mono text-xs">GEMINI.md</code> for behavior rules
+              Workspace configuration including <code className="px-1 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 font-mono text-xs">AGENTS.md</code> and platform-specific rule files
             </p>
           </div>
         </div>
@@ -138,14 +138,14 @@ export default function InstallationPage() {
           Next Steps
         </h2>
         <p className="text-base text-zinc-600 dark:text-zinc-400 mb-6">
-          Now that you have Antigravity Kit installed, learn about the core concepts:
+          Now that you have Codex Kit installed, learn about the core concepts:
         </p>
         <div className="grid gap-4 sm:grid-cols-2">
           <Link
             href="/docs/agents"
             className="group p-6 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all"
           >
-            <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Agents →</h3>
+            <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Agents â†’</h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400">
               Learn about specialist AI agents
             </p>
@@ -154,7 +154,7 @@ export default function InstallationPage() {
             href="/docs/skills"
             className="group p-6 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all"
           >
-            <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Skills →</h3>
+            <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Skills â†’</h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400">
               Discover 40+ domain-specific skills
             </p>
@@ -185,3 +185,6 @@ export default function InstallationPage() {
     </div>
   );
 }
+
+
+

@@ -1,4 +1,4 @@
-import { Lightbulb } from "lucide-react";
+﻿import { Lightbulb } from "lucide-react";
 import Link from "next/link";
 import skillsData from "@/services/skills.json";
 
@@ -54,15 +54,15 @@ export default function SkillsPage() {
                     What are Skills?
                 </h2>
                 <p className="text-base text-zinc-600 dark:text-zinc-400 mb-4">
-                    Skills are modular knowledge packages that contain principles, patterns, and decision-making frameworks for specific domains. They're loaded automatically when an agent needs them.
+                    Skills are modular knowledge packages that contain principles, patterns, and decision-making frameworks for specific domains. They&apos;re loaded automatically when an agent needs them.
                 </p>
                 <p className="text-base text-zinc-600 dark:text-zinc-400 mb-6">
-                    Unlike hard-coded templates, skills teach <em>principles</em> — enabling agents to make contextual decisions rather than copying patterns.
+                    Unlike hard-coded templates, skills teach <em>principles</em> â€” enabling agents to make contextual decisions rather than copying patterns.
                 </p>
                 <div className="mt-2 p-4 rounded-lg border border-blue-200 dark:border-blue-900 bg-blue-50 dark:bg-blue-950/20 mb-6">
                     <p className="text-sm text-blue-900 dark:text-blue-100 mb-0">
                         <Lightbulb className="w-4 h-4 inline" />
-                        <strong className="font-semibold"> Note:</strong> Skills are loaded on-demand based on task context. You don't need to configure anything manually.
+                        <strong className="font-semibold"> Note:</strong> Skills are loaded on-demand based on task context. You don&apos;t need to configure anything manually.
                     </p>
                 </div>
             </section>
@@ -150,11 +150,11 @@ export default function SkillsPage() {
                 <div className="relative group mb-6">
                     <pre className="p-4 rounded-lg bg-zinc-900 dark:bg-zinc-950 overflow-x-auto border border-zinc-800 font-mono text-sm">
                         <code className="text-zinc-100">{`skills/
-└── react-patterns/
-    ├── SKILL.md         # Main documentation
-    ├── sections/        # Detailed guides
-    ├── examples/        # Reference implementations
-    └── scripts/         # Helper utilities (optional)`}</code>
+â””â”€â”€ react-patterns/
+    â”œâ”€â”€ SKILL.md         # Main documentation
+    â”œâ”€â”€ sections/        # Detailed guides
+    â”œâ”€â”€ examples/        # Reference implementations
+    â””â”€â”€ scripts/         # Helper utilities (optional)`}</code>
                     </pre>
                 </div>
             </section>
@@ -169,7 +169,7 @@ export default function SkillsPage() {
                         href="/docs/workflows"
                         className="group p-6 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all"
                     >
-                        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Workflows →</h3>
+                        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Workflows â†’</h3>
                         <p className="text-sm text-zinc-600 dark:text-zinc-400">
                             Learn about slash command procedures
                         </p>
@@ -178,7 +178,7 @@ export default function SkillsPage() {
                         href="/docs/cli"
                         className="group p-6 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all"
                     >
-                        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">CLI Reference →</h3>
+                        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">CLI Reference â†’</h3>
                         <p className="text-sm text-zinc-600 dark:text-zinc-400">
                             Explore command-line tools
                         </p>
@@ -210,3 +210,4 @@ export default function SkillsPage() {
         </div>
     );
 }
+

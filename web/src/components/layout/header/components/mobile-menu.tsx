@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import DonateDialog from '@/components/layout/header/components/donate-dialog';
@@ -34,11 +34,6 @@ const navSections = [
 export default function MobileMenu() {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
-
-    // Close menu when route changes
-    useEffect(() => {
-        setIsOpen(false);
-    }, [pathname]);
 
     return (
         <>
@@ -77,6 +72,7 @@ export default function MobileMenu() {
                                                 <Link
                                                     key={item.href}
                                                     href={item.href}
+                                                    onClick={() => setIsOpen(false)}
                                                     className={`
                                                         block px-3 py-2 text-sm rounded-md transition-colors
                                                         ${isActive
@@ -97,7 +93,7 @@ export default function MobileMenu() {
                         {/* Mobile Action Buttons */}
                         <div className="mt-6 pt-6 border-t border-zinc-200 dark:border-zinc-800 flex gap-3">
                             <DonateDialog className="" />
-                            <Link href="https://github.com/vudovn/antigravity-kit" target="_blank" rel="noopener noreferrer">
+                            <Link href="https://github.com/Labontese/antigravity-kit-for-codex" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
                                 <Button variant="outline" className="w-full justify-start">
                                     <GithubIcon className="w-4 h-4 mr-2" />
                                     GitHub

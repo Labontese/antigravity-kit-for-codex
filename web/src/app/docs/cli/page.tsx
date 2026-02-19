@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export default function CLIPage() {
     return (
@@ -16,7 +16,7 @@ export default function CLIPage() {
                     CLI Reference
                 </h1>
                 <p className="text-lg text-zinc-600 dark:text-zinc-400">
-                    Command-line interface for managing Antigravity Kit installations.
+                    Command-line interface for managing Codex Kit installations.
                 </p>
             </div>
 
@@ -26,7 +26,7 @@ export default function CLIPage() {
                     Overview
                 </h2>
                 <p className="text-base text-zinc-600 dark:text-zinc-400 mb-6">
-                    The <code className="px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-sm font-mono">ag-kit</code> CLI tool helps you manage Antigravity Kit installations across your projects.
+                    The <code className="px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-sm font-mono">codex-kit</code> CLI tool helps you manage Codex Kit installations across your projects.
                 </p>
             </section>
 
@@ -40,24 +40,24 @@ export default function CLIPage() {
                     {/* init */}
                     <div>
                         <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-50 mb-3">
-                            <code className="font-mono">ag-kit init</code>
+                            <code className="font-mono">codex-kit init</code>
                         </h3>
                         <p className="text-base text-zinc-600 dark:text-zinc-400 mb-4">
-                            Initialize Antigravity Kit in your project by installing the <code className="px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-sm font-mono">.agent</code> folder.
+                            Initialize Codex Kit in your project by installing the <code className="px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-sm font-mono">.agent</code> folder.
                         </p>
 
                         <div className="relative group mb-4">
                             <pre className="p-4 rounded-lg bg-zinc-900 dark:bg-zinc-950 overflow-x-auto border border-zinc-800 font-mono text-sm">
-                                <code className="text-zinc-100">ag-kit init</code>
+                                <code className="text-zinc-100">codex-kit init</code>
                             </pre>
                         </div>
 
                         <div className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50">
                             <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Behavior</div>
                             <ul className="text-sm text-zinc-600 dark:text-zinc-400 space-y-1">
-                                <li>• Creates <code className="px-1 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 font-mono text-xs">.agent/</code> directory in current folder</li>
-                                <li>• Downloads latest templates from GitHub</li>
-                                <li>• Skips  if <code className="px-1 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 font-mono text-xs">.agent/</code> already exists (use <code className="px-1 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 font-mono text-xs">--force</code> to override)</li>
+                                <li>â€¢ Creates <code className="px-1 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 font-mono text-xs">.agent/</code> directory in current folder</li>
+                                <li>â€¢ Downloads latest templates from GitHub</li>
+                                <li>â€¢ Skips  if <code className="px-1 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 font-mono text-xs">.agent/</code> already exists (use <code className="px-1 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 font-mono text-xs">--force</code> to override)</li>
                             </ul>
                         </div>
                     </div>
@@ -65,15 +65,15 @@ export default function CLIPage() {
                     {/* update */}
                     <div>
                         <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-50 mb-3">
-                            <code className="font-mono">ag-kit update</code>
+                            <code className="font-mono">codex-kit update</code>
                         </h3>
                         <p className="text-base text-zinc-600 dark:text-zinc-400 mb-4">
-                            Update your existing Antigravity Kit installation to the latest version.
+                            Update your existing Codex Kit installation to the latest version.
                         </p>
 
                         <div className="relative group mb-4">
                             <pre className="p-4 rounded-lg bg-zinc-900 dark:bg-zinc-950 overflow-x-auto border border-zinc-800 font-mono text-sm">
-                                <code className="text-zinc-100">ag-kit update</code>
+                                <code className="text-zinc-100">codex-kit update</code>
                             </pre>
                         </div>
 
@@ -87,7 +87,7 @@ export default function CLIPage() {
                     {/* status */}
                     <div>
                         <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-50 mb-3">
-                            <code className="font-mono">ag-kit status</code>
+                            <code className="font-mono">codex-kit status</code>
                         </h3>
                         <p className="text-base text-zinc-600 dark:text-zinc-400 mb-4">
                             Check the current installation status and version information.
@@ -95,18 +95,18 @@ export default function CLIPage() {
 
                         <div className="relative group mb-4">
                             <pre className="p-4 rounded-lg bg-zinc-900 dark:bg-zinc-950 overflow-x-auto border border-zinc-800 font-mono text-sm">
-                                <code className="text-zinc-100">ag-kit status</code>
+                                <code className="text-zinc-100">codex-kit status</code>
                             </pre>
                         </div>
 
                         <div className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50">
                             <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Output Includes</div>
                             <ul className="text-sm text-zinc-600 dark:text-zinc-400 space-y-1">
-                                <li>• Installation status (installed/not installed)</li>
-                                <li>• Current version</li>
-                                <li>• Agent count</li>
-                                <li>• Skill count</li>
-                                <li>• Workflow count</li>
+                                <li>â€¢ Installation status (installed/not installed)</li>
+                                <li>â€¢ Current version</li>
+                                <li>â€¢ Agent count</li>
+                                <li>â€¢ Skill count</li>
+                                <li>â€¢ Workflow count</li>
                             </ul>
                         </div>
                     </div>
@@ -189,7 +189,7 @@ export default function CLIPage() {
                         </h3>
                         <div className="relative group">
                             <pre className="p-4 rounded-lg bg-zinc-900 dark:bg-zinc-950 overflow-x-auto border border-zinc-800 font-mono text-sm">
-                                <code className="text-zinc-100">ag-kit init --force</code>
+                                <code className="text-zinc-100">codex-kit init --force</code>
                             </pre>
                         </div>
                     </div>
@@ -200,7 +200,7 @@ export default function CLIPage() {
                         </h3>
                         <div className="relative group">
                             <pre className="p-4 rounded-lg bg-zinc-900 dark:bg-zinc-950 overflow-x-auto border border-zinc-800 font-mono text-sm">
-                                <code className="text-zinc-100">ag-kit init --path ./my-project</code>
+                                <code className="text-zinc-100">codex-kit init --path ./my-project</code>
                             </pre>
                         </div>
                     </div>
@@ -211,7 +211,7 @@ export default function CLIPage() {
                         </h3>
                         <div className="relative group">
                             <pre className="p-4 rounded-lg bg-zinc-900 dark:bg-zinc-950 overflow-x-auto border border-zinc-800 font-mono text-sm">
-                                <code className="text-zinc-100">ag-kit init --branch dev</code>
+                                <code className="text-zinc-100">codex-kit init --branch dev</code>
                             </pre>
                         </div>
                     </div>
@@ -222,7 +222,7 @@ export default function CLIPage() {
                         </h3>
                         <div className="relative group">
                             <pre className="p-4 rounded-lg bg-zinc-900 dark:bg-zinc-950 overflow-x-auto border border-zinc-800 font-mono text-sm">
-                                <code className="text-zinc-100">ag-kit init --quiet --force</code>
+                                <code className="text-zinc-100">codex-kit init --quiet --force</code>
                             </pre>
                         </div>
                     </div>
@@ -239,18 +239,18 @@ export default function CLIPage() {
                         href="/docs/installation"
                         className="group p-6 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all"
                     >
-                        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Installation Guide →</h3>
+                        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Installation Guide â†’</h3>
                         <p className="text-sm text-zinc-600 dark:text-zinc-400">
                             Full installation instructions
                         </p>
                     </Link>
                     <a
-                        href="https://github.com/vudovn/antigravity-kit"
+                        href="https://github.com/Labontese/antigravity-kit-for-codex"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group p-6 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all"
                     >
-                        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">View on GitHub →</h3>
+                        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">View on GitHub â†’</h3>
                         <p className="text-sm text-zinc-600 dark:text-zinc-400">
                             Source code and contribution guide
                         </p>
@@ -270,7 +270,7 @@ export default function CLIPage() {
                     Workflows
                 </Link>
                 <a
-                    href="https://github.com/vudovn/antigravity-kit"
+                    href="https://github.com/Labontese/antigravity-kit-for-codex"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm font-medium text-zinc-900 dark:text-zinc-50 hover:underline flex items-center gap-1"
@@ -284,3 +284,6 @@ export default function CLIPage() {
         </div>
     );
 }
+
+
+
