@@ -2,9 +2,10 @@
 trigger: always_on
 ---
 
-# GEMINI.md - Antigravity Kit
+# GEMINI.md - Codex Kit Compatibility Layer
 
 > This file defines how the AI behaves in this workspace.
+> For Codex sessions, use the root `AGENTS.md` as the canonical workspace contract.
 
 ---
 
@@ -116,7 +117,7 @@ When user's prompt is NOT in English:
 
 **Before modifying ANY file:**
 
-1. Check `CODEBASE.md` → File Dependencies
+1. If `CODEBASE.md` exists, check File Dependencies
 2. Identify dependent files
 3. Update ALL affected files together
 
